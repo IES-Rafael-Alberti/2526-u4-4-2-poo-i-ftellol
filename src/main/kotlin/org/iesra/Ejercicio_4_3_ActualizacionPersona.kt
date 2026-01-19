@@ -29,15 +29,15 @@ class Persona2(var peso: Double, var altura: Double) {
         return "Hola $nombre"
     }
 
-    fun alturaEncimaMedia(): Boolean {
+    private fun alturaEncimaMedia(): Boolean {
         return altura >= 1.75
     }
 
-    fun pesoEncimaMedia(): Boolean {
+    private fun pesoEncimaMedia(): Boolean {
         return peso >= 70
     }
 
-    fun obtenerDescImc(): String {
+    private fun obtenerDescImc(): String {
         if (imc < 18.5) {
             return ("peso insuficiente")
         }
